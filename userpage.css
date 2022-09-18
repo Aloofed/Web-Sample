@@ -1,0 +1,230 @@
+body{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    font-family: 'Poppins';
+}
+.cont{
+    height: 20vh;
+    width: 100%;
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    margin-top: -10px;
+}
+.home{
+    width: 40px;
+    margin-left: 900px;
+}
+.cart{
+    width: 40px;
+    margin-left: 10px;
+}
+.acc{
+    width: 45px;
+   margin-top: 20px;
+}
+.logs{
+    width: 100px;
+}
+
+.sear{
+    width: 30px;
+}
+.search{
+    margin-top: 20px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    margin-left: 580px;
+}
+
+.search button{
+   border: none;
+   cursor: pointer;
+   border-radius: 0 10px 10px 0;
+   display: none;
+}
+.inp{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    border-style: groove;
+    border-width: 1px;
+}
+h4{
+    color: rgb(185, 85, 9);
+    font-weight: bold;
+}
+.pic img{
+    margin-top: 50px;
+    height: 300px;
+    width: 250px;
+    margin-left: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+.pic img:hover{
+   transform: translateY(-5px);
+}
+.pic{
+    transition: 1s;
+}
+.pic:hover{
+    transform: translateY(-5px);
+}
+.collect{
+    width: 100%;
+    margin-top: 100px;
+}
+.dots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.set{
+    display: block;
+    text-align: center;
+}
+.sets .up{
+    font-size: 16px;
+    cursor: pointer;
+    background: #FCC420;
+    color: black;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    transition: 1s;
+}
+.sets .up:hover{
+    background: #0E2E49;
+}
+.sets .del{
+    font-size: 16px;
+    cursor: pointer;
+    background: rgb(236, 90, 12);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.sets .del:hover{
+    background: #920D28;
+}
+.dropcont{
+    background: black;
+    height: 10vh;
+    width: 100px;
+    position: absolute;
+    display: none;
+    margin-left: -15px;
+}
+.drop{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+   margin-left: 10px;
+}
+.drop:hover .dropcont{
+    display: block;
+}
+
+.acs{
+    padding: 5px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    background: transparent;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+.logas{
+    padding: 5px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+.circle p{
+    position: absolute;
+    background: rgb(236, 90, 12);
+    color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+    margin-left: 84%;
+    margin-top: -50px;
+}
+.num{
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.footer{
+    min-height: 20vh;
+    max-width: 100%;
+    background: black;
+    margin-top: 25%;
+}
+.footer .foot p{
+    margin-top:40px;
+    margin-left: 500px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+.sets .com{
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffba26; 
+    color: black; 
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+    transition: 1s;
+}
+.sets .com:hover{
+    background: #0E2E49;
+    color: white;
+}
+@media only screen and (max-width: 926px){
+    .home{
+        margin-left: 0px; 
+    }
+    .circle p{
+        margin-left: 250px;
+        margin-top: -50px;
+    }
+    .contains{
+        text-align: center; 
+    }
+    .contains p{
+        margin-top: 0px;
+        margin: 0 auto;
+    }
+    .search{
+        margin-left: 100px;
+    }
+    .footer .foot p{
+        margin-left: 100px;
+    }
+}

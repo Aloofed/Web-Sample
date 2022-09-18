@@ -1,0 +1,503 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+p{
+    margin-top: 50px;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 43%;
+    
+}
+.pp{
+    text-align: center;
+}
+img{
+    max-width: 200px;
+    
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.heads{
+    text-align: left;
+    margin-top: 10px;
+}
+.heads .search{
+    font-size: 19px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.logs {
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #255884;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: 1s;
+}
+.logs:hover{
+    background: rgba(0,0,0,0.5);
+}
+.adds{
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #c67605;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+.adds:hover{
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+.collect{
+    width: 100%;
+    top: 0;
+}
+.pic img{
+    height: 300px;
+    width: 250px;
+    margin-left: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+.pic img:hover{
+   transform: translateY(-5px);
+}
+.dots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.set{
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+}
+.sets .up{
+    font-size: 16px;
+    cursor: pointer;
+    background: #E19D32;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.sets .del{
+    font-size: 16px;
+    cursor: pointer;
+    background: #E26F37;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+h4{
+    color: blue;
+}
+.model{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 50%;
+    top: -200px;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out,
+                 top 300ms ease-in-out,
+                 transform 300ms ease-in-out;
+}
+.model.active{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+.conts{
+    background-color: white;
+    max-width: 550px;
+    min-height: 500px;
+    margin-top: 50px;
+    margin-left: 400px;
+    border-radius: 5px;
+}
+.cols{
+    display: block;
+    margin-left: 120px;
+}
+.inp1 input{
+    font-size: 20px;
+    margin-top: 150px;
+}
+.inp2 input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.inp input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.inp3 input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.bts{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.bts .can{
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #cb671a;
+    cursor: pointer;
+    color: white;
+}
+.bts .save{
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #FCC420;
+    cursor: pointer;
+    color: white;
+}
+.sets{
+    display: flex;
+   margin-left: 25px; 
+}
+.sets .del{
+    margin-left: 15px;
+}
+
+.modals{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6); 
+    top: 0;
+    
+}
+
+.contain{
+    background-color: white;
+    max-width: 550px;
+    min-height: 650px;
+    margin-top: 20px;
+    margin-left: 400px;
+    border-radius: 5px;
+}
+.cold{
+    display: block;
+    margin-left: 120px;
+}
+.inps1 input{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.inps2 input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.inps input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.inps3 input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+.btsn{
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.btsn .cans{
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: #cb671a;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.btsn .save{
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #2B8ADD;
+    cursor: pointer;
+    color: white;
+}
+
+.sic{
+    margin-left: 10px;
+}
+.sic img{
+    
+    height: 300px;
+    width: 250px;
+    margin-left: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+.sic img:hover{
+   transform: translateY(-5px);
+}
+.container a{
+    margin-top: 90px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: -50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    transition: 1s;
+}
+.container a:hover{ 
+    background: #c67605;
+    color: white;
+}
+.bt{
+    text-align: center;
+}
+.logi img{
+    position: absolute;
+    width: 50px;
+}
+.footer{
+    min-height: 20vh;
+    max-width: 100%;
+    background: black;
+    margin-top: 100px;
+}
+.footer .foot p{
+    margin-top:40px;
+    margin-left: 500px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+.hed{
+    margin-left: 600px; 
+}
+.remo{
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px px;
+    border-radius: 5px;
+    transition: 1s;
+    color: white;
+    background: #C4A589;
+}
+.remo:hover{
+    background: lightgray;
+    color: black;
+}
+table{
+    width: 85%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    
+ }
+ .collector{
+     display: flex;
+ }
+.sell{
+    text-decoration: none;
+    font-size: 20px;
+    background: lightgray; 
+    color: black;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 60rem;
+    transition: 1s;
+}
+.sell:hover{
+    background: gray;
+    color: white;
+}
+.sold{
+    text-decoration: none;
+    background: rgb(128, 68, 0);
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.sold:hover{
+    background: rgb(250, 194, 10);
+}
+.add{
+    text-decoration: none;
+    background: #0E2E49;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.add:hover{
+    background: #1F1F1F;
+}
+.inp1 input{
+    font-size: 20px;
+    margin-top: 150px;
+    margin-top: 80px;
+}
+.inp1 p{
+    transform: translate(-50%);
+    color: black;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.inpu1 input{
+    font-size: 20px;
+    margin-top: 80px;
+    
+}
+.inpu1 p{
+    transform: translate(-50%);
+    color: black;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.cool{
+    display: flex;
+    max-width: 250px;
+    height: 350px;
+    overflow: hidden;
+}
+.cool input{
+    display: none;
+}
+.manual{
+    position: absolute;
+    width: 300px;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid #C4A589;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: rgb(128, 75, 0);
+}
+#radio1:checked ~ .first{
+    margin-right: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -210%;
+}
+@media only screen and (max-width: 926px){
+    img{
+        width: 100px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    p{
+        margin-top: 20px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .container a{
+        margin-top: 60px;
+    }
+    .bt{
+        text-align: center;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .model{
+        place-content: center;
+    }
+    .conts{
+        margin: 0 auto;
+    }
+    .cols{
+        margin: 50px;
+    }
+    .footer .foot p{
+        margin-left: 50px;
+    }
+    .contain{
+        margin: 0 auto;
+    }
+    .cold{
+        margin-left: 60px;
+    }
+}

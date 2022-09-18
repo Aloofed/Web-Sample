@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    font-family: "Poppins";
+}
+.cont{
+    height: 20vh;
+    width: 100%;
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    margin-top: -10px;
+}
+.home{
+    width: 40px;
+    margin-left: 900px;
+}
+.cart{
+    width: 40px;
+    margin-left: 10px;
+}
+.acc{
+    width: 45px;
+   margin-top: 20px;
+}
+.logs{
+    width: 100px;
+}
+table{
+   width: 55%;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 30px;
+   margin-left: 50px;
+}
+th, td{
+    padding: 10px;
+}
+.tab{
+    display: flex;
+    margin:  0 auto;
+}
+.tab button{
+    font-size: 19px;
+    background: #cb671a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    left: 0;
+    align-items: left;
+    transition: 1s;
+    
+}
+.tab button:hover{
+    background: #920D28;
+}
+.mod{
+    margin-left: 100px;
+}
+.mods{
+    height: 400px;
+    width: 400px;
+    box-shadow: 6px 10px 6px 6px rgba(0,0,0,0.5);
+    position: fixed;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+.tab .btn{
+    font-size: 19px;
+    background: #FCC420;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 1s;
+}
+.tab .btn:hover{
+    background: #A88215;
+}
+h2{
+    color: #E19D32;
+    margin-top: 60px;
+}
+.dropcont{
+    background: black;
+    height: 10vh;
+    width: 100px;
+    position: absolute;
+    display: none;
+    margin-left: -15px;
+}
+.drop{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+   margin-left: 10px;
+}
+.drop:hover .dropcont{
+    display: block;
+}
+
+.acs{
+    padding: 5px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    background: transparent;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+.logas{
+    padding: 5px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+.footer{
+    min-height: 20vh;
+    max-width: 100%;
+    background: black;
+    margin-top: 25%;
+}
+.footer .foot p{
+    margin-top:40px;
+    margin-left: 500px;
+    color: white;
+    font-size: 20px;
+    position: absolute; 
+}
+.nom{ 
+    flex-wrap: wrap;
+    text-align: center;
+}
+.tab .upbtn{
+    background: #ff9a26;
+}
+@media only screen and (max-width: 926px){
+    .home{
+        margin-left: 0px;
+    }
+    .tab{
+        display: block;
+    }
+    table{
+        margin-left: 0px;
+    } 
+    .mod{
+        margin-left: 0px;
+    }
+}

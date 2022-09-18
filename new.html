@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela's Beauty | Admin Page</title>
+    <link rel="stylesheet" href="seller.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="pp">
+        <img src="log.png" >
+        </div>
+        <p>Administrator</p>
+        <div class="bt">
+        <a href="index.html">Log Out</a>
+        </div>
+    </div> 
+    <div class="heads">
+        <a href="seller.php" class="add" >Go Back</a>
+    </div>
+    <h2 class="hed">Seller Registration</h2>
+    <div class="bts">
+        <button class="add-more">Add More</button> 
+    </div>
+    <div class="collector">
+        <form action="Users.php" method="post" enctype="multipart/form-data">
+            <div class="selle">
+                <div class="input-group">
+                    <input type="text" class="one" placeholder="Name" name="username[]" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" name="email[]" required>
+                </div>
+                <div class="input-group">
+                    <input type="address" placeholder="Address" name="address[]" required >
+                </div>
+                <div class="input-group">
+                    <input type="contact" placeholder="Contact" name="contact[]" required >
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" name="password[]" required>
+                </div>
+                <div class="input-group">
+                    <select name="type[]" id="" required >
+                        <option value=""></option>
+                        <option value="Seller">Seller</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="new-form"></div>
+
+            <div class="group">
+                <button name="seller" class="btn">Register</button>
+            </div>
+        </form>
+        
+        
+        
+    </div>
+    
+    <div class="footer">
+        <div class="foot">
+            <p>Angela's Beauty | Alright Reserved 2022</p>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+    <script src="pop.js"></script>
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $(document).on('click', '.bn', function(){
+                $(this).closest('.selle').remove();
+            });
+
+            $(document).on('click','.add-more', function(){
+             $('.new-form').append('<div class="selle">\
+            <div class="input-group">\
+                <input type="text" class="one" placeholder="Name" name="username[]" required>\
+            </div>\
+            <div class="input-group">\
+                <input type="email" placeholder="Email" name="email[]" required>\
+            </div>\
+            <div class="input-group">\
+                <input type="address" placeholder="Address" name="address[]" required >\
+            </div>\
+            <div class="input-group">\
+                <input type="contact" placeholder="Contact" name="contact[]" required >\
+            </div>\
+            <div class="input-group">\
+                <input type="password" placeholder="Password" name="password[]" required>\
+            </div>\
+            <div class="input-group">\
+                <select name="type[]" id="" placeholder="Type" required >\
+                    <option value=""></option>\
+                    <option value="Seller">Seller</option>\
+                </select>\
+            </div>\
+            <div class="bn">\
+                <button>X</button>\
+            </div>\
+        </div>');
+            });
+
+        });
+    </script>
+</body>
+</html>

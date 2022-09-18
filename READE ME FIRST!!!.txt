@@ -1,0 +1,14 @@
+How to set up this system
+1. Import to your localhost/phpmyadmin
+   the database was in this folder.
+2. After importing the database open your website
+ and look for the index.html
+3. Before login the system, first you must register
+ as admin
+ gmail must: admin@gmail.com
+ password must: admin
+ other information will up to you
+4. after creating the admin account then ou can
+register your own account
+5. your good to go and please follow the features
+

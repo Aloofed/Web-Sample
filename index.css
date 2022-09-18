@@ -1,0 +1,195 @@
+body{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.container{
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contain{
+    min-height: 20vh;
+    max-width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    margin-top: 0px;
+    margin-top: 40px;
+    margin-left: 400px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-left: 30px;
+    background: transparent;
+    padding: 5px;
+    list-style: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+nav ul li a:hover{
+    background: #f65e0588;
+    color: white;
+}
+nav img{
+    max-width: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.set{
+    margin-top: 250px;
+}
+.set a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background: #0F0A07;
+    padding: 10px; 
+    border-radius: 5px;
+    margin-left: 650px;
+    transition: 1s;
+}
+.set a:hover{
+    background: #f65e0588;
+    color: white;
+}
+.containers{
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont2{
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    min-height: 20vh;
+    max-width: 100%;
+    background: black;
+}
+.containers .head h2{
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.cont2 .heads h2{
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.footer .foot p{
+    margin-top:40px;
+    margin-left: 500px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+.head p{
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 150px;
+}
+.fb{
+    display: flex;
+    margin-left: 550px;
+}
+.fb img{
+    margin-top: 50px;
+}
+.fb p{
+    margin-top: 60px;
+    color: white; 
+}
+.insta{
+    display: flex;
+    margin-left: 550px;
+}
+.insta img{
+    margin-top: 30px;
+}
+.insta p{
+    margin-top: 60px;
+    color: white; 
+}
+.mail{
+    display: flex;
+    margin-left: 550px;
+}
+.mail img{
+    margin-top: 30px;
+}
+.mail p{
+    margin-top: 60px;
+    color: white; 
+}
+.pil p{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+.menu{
+    margin-top: 50px;
+    margin-left: 400px;
+    max-width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 926px){
+    .menu{
+        display: block;
+        margin-left: 50px;
+    }
+    nav ul{
+        display: block;
+        position: absolute;
+        width: 100px;
+        background: black;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+    nav ul li a{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 1s;
+    }
+    .set a{
+        margin-left: 150px;
+    }
+    .set{
+        margin-top: 100px;
+    }
+    .fb{
+        margin-left: 100px;
+    }
+    .insta{
+        margin-left: 100px;
+    }
+    .mail{
+        margin-left: 100px;
+    }
+}

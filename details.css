@@ -1,0 +1,187 @@
+body{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black';
+}
+.cont{
+    max-width: 100%;
+}
+.conts{
+    text-align: center;
+    margin-top: 10px;
+    transition: 1s;
+}
+.conts:hover{
+    transform: translateY(-5px);
+}
+.conts .headname{
+    font-size: 2rem;
+    color: blue;
+}
+.conts .price{
+    font-size: 22px;
+    color: rgb(250, 180, 4);
+    margin-top: 0px;
+}
+.coment{
+    text-align: center;
+}
+.coment .inpcom{
+    font-size: 20px;
+    padding: 5px;
+}
+.coment .post{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #26C9FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.collect{
+    display: flex;
+    margin-left: 300px;
+}
+.collect .mail{
+    margin-left: 10px;
+}
+.collect .author{
+    color: blue;
+}
+.bak a{
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+.slid{
+    display: flex;
+    max-width: 325px;
+    min-height: 300px;
+    overflow: hidden;
+    margin-left: 500px;
+}
+.slid input{
+    display: none;
+}
+.sec{
+    margin-left: 20px;
+}
+.sec img{
+    max-width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+}
+.manual{
+    position: absolute;
+    width: 300px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid #cb671a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: #cb671a;;
+}
+#radio1:checked ~ .first{
+    margin-right: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -95%;
+}
+#radio3:checked ~ .first{
+    margin-left: -195%;
+}
+
+.center{
+    margin-left: 315px;
+}
+.center .star{
+    min-height: 150px;
+    max-width: 500px;
+    text-align: center;
+    
+}
+.star label{
+    font-size: 50px;
+    color: lightgrey;
+    cursor: pointer;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+    float: right;
+}
+.star label:before{
+    content: '★';
+}
+.star input{
+    display: none;
+}
+.star input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+    transition: 1s;
+}
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label{
+    color: gold;
+}
+.star input:checked > label:hover,
+.star input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+    transition: 1s;
+}
+.star .result:before{
+    position: absolute;
+    content: ''; 
+    margin-left: 360px;
+    bottom: -45px;
+    font-size: 22px;
+    display: none;
+}
+.star input:checked ~ .result:before{ 
+    display: block;
+}
+.star #five:checked ~ .result:before{ 
+    content: "5";
+}
+.star #four:checked ~ .result:before{
+    content: "4";
+}
+.star #three:checked ~ .result:before{
+    content: "3";
+}
+.star #two:checked ~ .result:before{
+    content: "2";
+}
+.star #one:checked ~ .result:before{  
+    content: "1";
+}
+.btk button{
+    margin-top: 50px;
+    border: none;
+    background: teal;
+    color: white;
+    font-size: 22px;
+    padding: 5px 10px;
+    margin-left: 220px;
+    border-radius: 5px;
+    cursor: pointer;
+}
